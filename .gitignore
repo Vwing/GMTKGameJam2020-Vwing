@@ -60,3 +60,5 @@ crashlytics-build.properties
 
 # other stuff
 *.bak
+Assets/Oculus/*
+Assets/Oculus.meta
