@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - HandCollider1
+  - HandCollider2
+  - HandCollider3
+  - HandCollider4
   - 
   - 
   - 
