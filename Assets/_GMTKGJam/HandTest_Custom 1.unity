@@ -2769,7 +2769,7 @@ PrefabInstance:
     - target: {fileID: 114460394679914766, guid: e201a24a09e942042b93390d0444d728,
         type: 3}
       propertyPath: _enablePhysicsCapsules
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e201a24a09e942042b93390d0444d728, type: 3}
@@ -3311,8 +3311,6 @@ MonoBehaviour:
   useRecommendedMSAALevel: 0
   _monoscopic: 0
   enableAdaptiveResolution: 0
-  enableColorGamut: 0
-  colorGamut: 0
   minRenderScale: 0.7
   maxRenderScale: 1
   _headPoseRelativeOffsetRotation: {x: 0, y: 0, z: 0}

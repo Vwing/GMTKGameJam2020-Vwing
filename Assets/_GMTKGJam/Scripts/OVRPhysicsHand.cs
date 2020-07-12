@@ -19,18 +19,15 @@ public class OVRPhysicsHand : MonoBehaviour
         //    ourJoints[i].transform.SetParent(rb.transform);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        rb.velocity = (skeletonToCopy.transform.position - transform.position) / Time.fixedDeltaTime;
+        rb.velocity = (skeletonToCopy.transform.position - transform.position) / Time.deltaTime;
         rb.angularVelocity = Vector3.zero;
-        //rb.MovePosition(skeletonToCopy.transform.position);
-        //rb.MoveRotation(skeletonToCopy.transform.rotation);
         rb.rotation = (skeletonToCopy.transform.rotation);
         for (int i = 0; i < theirJoints.Length; ++i)
         {
-            ourJoints[i].velocity = (theirJoints[i].transform.position - ourJoints[i].transform.position) / Time.fixedDeltaTime;
+            ourJoints[i].velocity = (theirJoints[i].transform.position - ourJoints[i].transform.position) / Time.deltaTime;
             ourJoints[i].angularVelocity = Vector3.zero;
-            //ourJoints[i].MovePosition(theirJoints[i].position);
             ourJoints[i].MoveRotation(theirJoints[i].rotation);
             ourJoints[i].rotation = (theirJoints[i].rotation);
         }
